@@ -16,11 +16,11 @@
             title: "SUBSCRIPTIONS",
           },
           {
-            url: "",
+            url: "shop-locator",
             title: "COMIC SHOP LOCATOR",
           },
           {
-            url: "",
+            url: "dc-power-visa",
             title: "DC POWER VISA",
           },
           
@@ -37,10 +37,44 @@
 
 <template>
 
+  <section>
+
+    <div class="container">
+
+      <div class="img-container" v-for="item in shopElem">
+        <img :src=getImageUrl(item.url) :alt="`icon of ${item.title}`">
+        <h5>{{ item.title }}</h5>
+      </div>
+
+    </div>
+
+  </section>
+
 </template>
 
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 
+  section {
+    background-color: $primary;
 
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 150px;
+      padding: 0 2rem;
+
+      .img-container{
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        img {
+          width: 25%;
+        }
+      }
+    }
+  }
 </style>

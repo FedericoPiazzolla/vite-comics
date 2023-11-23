@@ -72,7 +72,7 @@ export default {
 header {
   
   .wrapper {
-    height: 90px;
+    height: 120px;
 
 
     &.flex {
@@ -97,7 +97,7 @@ header {
 
         li {
           font-size: .8rem;
-          padding: 2rem .5rem;
+          padding: 3.2rem .5rem;
           cursor: pointer;
           border-bottom: 3px solid transparent;
 

@@ -75,9 +75,14 @@
         display: flex;
         align-items: center;
         gap: .5rem;
+        width: calc(100% / 5 - 0.5rem);
 
         img {
-          width: 25%;
+          width: 35px;
+        }
+
+        h5 {
+          font-size: .7rem;
         }
       }
     }

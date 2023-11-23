@@ -22,27 +22,32 @@
         ],
         listSocial: [
           {
-            icon: "",
+            icon: "facebook",
             link: ""
           },
           {
-            icon: "",
+            icon: "twitter",
             link: ""
           },
           {
-            icon: "",
+            icon: "youtube",
             link: ""
           },
           {
-            icon: "",
+            icon: "pinterest",
             link: ""
           },
           {
-            icon: "",
+            icon: "periscope",
             link: ""
           },
         ]
       }
+    },
+    methods: {
+      getImageUrl(imgName) {
+      return new URL(`../assets/img/footer-${imgName}.png`, import.meta.url).href;
+    }
     }
   }
 </script>
@@ -51,7 +56,17 @@
 
   <footer>
     <div class="footerTop">
-
+      <div class="footer-list">
+        <div v-for="itemList in listFooter">
+          <h4>{{ itemList.title }}</h4>
+          <ul>
+            <li v-for="item in itemList.list">
+              <a href="">{{ item }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dc-bg"></div>
     </div>
 
     <div class="footerBottom">
@@ -62,4 +77,46 @@
 
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>  
+  @use "../style/partials/variables" as *;
+  
+  footer {
+    height: 400px;
+    width: 100%;
+    background-image: url(../assets/img/footer-bg.jpg);
+
+    .footerTop {
+      color: white;
+      display: flex;
+      justify-content: space-between;
+
+      .dc-bg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../assets/img/dc-logo-bg.png);
+        width: 50%;
+        height: 400px;
+      }
+
+      .footer-list {
+        display: flex;
+        padding: 2rem 0;
+        gap: 1rem;
+
+        div {
+          padding: 1rem;
+        }
+        
+        ul {
+          list-style-type: none;
+        }
+
+        a {
+          color: gray;
+          font-size: .7rem;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+</style>

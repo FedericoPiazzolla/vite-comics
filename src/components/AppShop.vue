@@ -4,23 +4,28 @@
       return {
         shopElem: [
           {
-            url: "digital-comics",
+            url: "comics-digital-comics",
+            file: "png",
             title: "DIGITAL COMICS",
           },
           {
-            url: "merchandise",
+            url: "comics-merchandise",
+            file: "png",
             title: "DC MERCHANDISE",
           },
           {
-            url: "subscriptions",
+            url: "comics-subscriptions",
+            file: "png",
             title: "SUBSCRIPTIONS",
           },
           {
-            url: "shop-locator",
+            url: "comics-shop-locator",
+            file: "png",
             title: "COMIC SHOP LOCATOR",
           },
           {
             url: "dc-power-visa",
+            file: "svg",
             title: "DC POWER VISA",
           },
           
@@ -28,8 +33,8 @@
       }
     },
     methods: {
-      getImageUrl(imgName) {
-        return new URL(`../assets/img/buy-comics-${imgName}.png`, import.meta.url).href;
+      getImageUrl(imgName, imgFile) {
+        return new URL(`../assets/img/buy-${imgName}.${imgFile}`, import.meta.url).href;
       }
     }
   }
@@ -42,7 +47,7 @@
     <div class="container">
 
       <div class="img-container" v-for="item in shopElem">
-        <img :src=getImageUrl(item.url) :alt="`icon of ${item.title}`">
+        <img :src="getImageUrl(item.url, item.file)" :alt="`icon of ${item.title}`">
         <h5>{{ item.title }}</h5>
       </div>
 

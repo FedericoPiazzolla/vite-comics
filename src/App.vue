@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppBanner from './components/AppBanner.vue';
 import AppFooter from './components/AppFooter.vue';
+import AppShop from './components/AppShop.vue';
 
 export default {
 
@@ -9,6 +10,7 @@ export default {
     AppHeader,
     AppBanner,
     AppFooter,
+    AppShop,
   },
   data() {
     return {}
@@ -20,7 +22,7 @@ export default {
 <template>
  <AppHeader />
  <AppBanner />
-
+ <AppShop />
  <AppFooter />
 </template>
 

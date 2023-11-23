@@ -114,6 +114,7 @@
         color: white;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         .dc-bg {
           background-position: center;
@@ -127,10 +128,13 @@
 
         .footer-list {
           display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
           gap: 1rem ;
 
           .footer-list-item {
-            padding: 1rem 0;
+            padding: .8rem 0;
+            width: calc(100% / 3 - 1rem);
 
             ul {
               list-style-type: none;

@@ -12,8 +12,8 @@ export default {
     AppBanner,
     AppFooter,
     AppShop,
-    AppSlides
-},
+    AppSlides,
+  },
   data() {
     return {}
   },

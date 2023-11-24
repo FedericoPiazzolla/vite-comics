@@ -84,7 +84,7 @@ header {
     .logoCol {
       
       img {
-        width: 65px;
+        min-width: 65px;
       }
 
     }

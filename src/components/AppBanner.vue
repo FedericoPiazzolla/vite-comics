@@ -9,7 +9,7 @@ export default {
 <template>
 
 <section class="banner">
-  <p>Content Here</p>
+  
 </section>
 
 </template>
@@ -18,10 +18,10 @@ export default {
   @use "../style/partials/variables" as *;
 
   .banner {
-    background-color: $bg_banner;
-    color: white;
-    height: 120px;
-    text-align: center;
-    padding: 2rem;
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
   }
 </style>

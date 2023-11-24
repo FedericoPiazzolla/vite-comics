@@ -79,6 +79,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 100%;
     }
 
     .logoCol {
@@ -90,15 +91,22 @@ header {
     }
 
     .linkCol {
+      height: 120px;
+
 
       ul {
         list-style-type: none;
         display: flex;
+        align-items: center;
+        height: 100%;
 
         li {
           font-size: .8rem;
-          padding: 3.2rem .5rem;
+          padding: 0 .5rem;
           cursor: pointer;
+          display: flex;
+          align-items: center;
+          height: 100%;
           border-bottom: 3px solid transparent;
 
           a {

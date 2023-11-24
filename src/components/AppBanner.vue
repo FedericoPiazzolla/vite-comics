@@ -22,6 +22,7 @@ export default {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     height: 300px;
   }
 </style>

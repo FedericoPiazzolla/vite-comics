@@ -8,16 +8,16 @@
             list: ["Charaters", "Comics", "Movies", "TV", "Games", "Videos", "News"]
           },
           {
-            title: "SHOP",
-            list: ["Shop DC", "Shop DC Collectibles"]
-          },
-          {
             title: "DC",
             list: ["Terms Of Use", "Privacy Policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshop", "CPSC Certificates", "Rating", "Shop Help", "Contact Us"]
           },
           {
             title: "SITES",
             list: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"]
+          },
+          {
+            title: "SHOP",
+            list: ["Shop DC", "Shop DC Collectibles"]
           },
         ],
         listSocial: [
@@ -129,12 +129,11 @@
         .footer-list {
           display: flex;
           flex-wrap: wrap;
-          align-items: flex-start;
-          gap: 1rem ;
+          align-items: stretch;
 
           .footer-list-item {
             padding: .8rem 0;
-            width: calc(100% / 3 - 1rem);
+            width: calc(100% / 3);
 
             ul {
               list-style-type: none;

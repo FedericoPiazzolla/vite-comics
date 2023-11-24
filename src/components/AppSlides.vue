@@ -90,6 +90,8 @@ export default {
   <section class="slides-container">
 
     <div class="container">
+      <div class="bage">CURRENT SERIES</div>
+
       <div class="row">
         <div class="col" v-for="(comic, index) in comics" :key="index">
           <ProductSlides :title="comic.series" :image="comic.thumb"/>
@@ -111,11 +113,23 @@ export default {
 .slides-container {
   background-color: $bg_banner;
 
+  .bage {
+    background-color: $primary;
+    display: inline-block;
+    color: white;
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    position: relative;
+    top: -1.7rem;
+    left: 0;
+  }
   .row {
     display: flex;
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
+    padding-top: 1.6rem;
 
     .col {
       width: calc(100% / 6);
@@ -127,13 +141,16 @@ export default {
     display: flex;
     width: 100%;
     justify-content: center;
-    padding: 1rem;
+    padding-bottom: 1rem;
 
     .btn-slides {
       background-color: $primary;
       text-decoration: none;
-      padding: .6rem 1rem;
+      padding: .6rem 1.6rem;
       color: white;
+      font-size: .8rem;
+      font-weight: bolder;
+      cursor: pointer;
     }
   }
   

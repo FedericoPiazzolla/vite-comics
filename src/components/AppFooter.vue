@@ -166,6 +166,7 @@
           background-color: $bg_footer_dark;
           color: white;
           font-weight: bolder;
+          cursor: pointer;
         }
 
         .social-list {

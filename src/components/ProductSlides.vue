@@ -29,8 +29,8 @@ export default {
 
   h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: .8rem;
-    padding: .5rem;
+    font-size: .7rem;
+    padding-top: .5rem;
   }
 }
 </style>
